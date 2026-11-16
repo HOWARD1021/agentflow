@@ -1,0 +1,22 @@
+{
+  "pipeline-roles": {
+    "implementation": "cheap",
+    "acceptance": "best"
+  },
+  "model-family": {
+    "magpie": {
+      "best": "group/tier-best/high",
+      "better": "group/tier-better/high",
+      "basic": "group/tier-basic/medium",
+      "cheap": "group/tier-cheap/high"
+    }
+  },
+  "looper-routes": {
+    "task": { "kind": "cli", "provider": "codex", "model-family": "magpie", "executable": "__CODEX_MAGPIE__" },
+    "repair": { "kind": "cli", "provider": "codex", "model-family": "magpie", "executable": "__CODEX_MAGPIE__" },
+    "acceptance": { "kind": "cli", "provider": "codex", "model-family": "magpie", "executable": "__CODEX_MAGPIE__" }
+  },
+  "looper-limits": {
+    "worker-timeout-minutes": 60
+  }
+}

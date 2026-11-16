@@ -17,7 +17,7 @@
     "review-order": "external",
     "save-evidence": "off",
     "saving-mode": "off",
-    "use-lang": "en-us"
+    "use-lang": "zh"
   },
   "pipeline-roles": {
     "requirements": "better",
@@ -25,7 +25,7 @@
     "explore": "better",
     "spike": "better",
     "spec": "better",
-    "implementation": "basic",
+    "implementation": "cheap",
     "security-scan": "best",
     "//": "review 也是用 acceptance 設定",
     "acceptance": "better",
@@ -34,6 +34,12 @@
     "product-docs": "better"
   },
   "model-family": {
+    "magpie": {
+      "best": "group/tier-best/high",
+      "better": "group/tier-better/high",
+      "basic": "group/tier-basic/medium",
+      "cheap": "group/tier-cheap/high"
+    },
     "openai": {
       "best": "gpt-6-astra/medium",
       "better": "gpt-6.1-sol/high",
@@ -71,17 +77,20 @@
     "task": {
       "kind": "cli",
       "provider": "codex",
-      "model-family": "openai"
+      "model-family": "magpie",
+      "executable": "/Users/howard/.local/bin/codex-magpie"
     },
     "repair": {
       "kind": "cli",
       "provider": "codex",
-      "model-family": "openai"
+      "model-family": "magpie",
+      "executable": "/Users/howard/.local/bin/codex-magpie"
     },
     "acceptance": {
       "kind": "cli",
       "provider": "codex",
-      "model-family": "openai"
+      "model-family": "magpie",
+      "executable": "/Users/howard/.local/bin/codex-magpie"
     }
   },
   "looper-limits": {

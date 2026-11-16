@@ -9,3 +9,5 @@ Requires: Node 20+, `codex` on PATH, a Magpie gateway (default `http://127.0.0.1
 3. `./install.sh project <repo>` - merges `ag.json.example` into a repo that already ran `agf init`. A backup is written next to the file; the JSON may be re-indented.
 
 Tune routes, tiers and the timeout in `ag.json.example` before sharing. Never put tokens in this repo.
+
+Design notes, branch roles and verification status: [DESIGN.zh-tw.md](DESIGN.zh-tw.md).

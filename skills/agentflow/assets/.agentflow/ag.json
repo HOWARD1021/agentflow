@@ -95,6 +95,7 @@
   },
   "looper-limits": {
     "max-workers": 3,
-    "max-repairs": 2
+    "max-repairs": 2,
+    "worker-timeout-minutes": 60
   }
 }

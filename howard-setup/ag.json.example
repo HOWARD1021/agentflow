@@ -1,7 +1,8 @@
 {
   "pipeline-roles": {
     "implementation": "cheap",
-    "acceptance": "best"
+    "acceptance": "best",
+    "learn": "cheap"
   },
   "model-family": {
     "magpie": {
